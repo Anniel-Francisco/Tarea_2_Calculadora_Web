@@ -1,13 +1,40 @@
 *{
           margin:0;
           padding:0;
-          font-family: 'Poppins', sans-serif;
+          font-family: monospace;
           box-sizing: border-box;
+}
+
+.header-calc{
+          display: flex;
+          justify-content: space-between;
+}
+
+.header-calc button{
+          border: none;
+          width: 60px;
+        width: 75px;
+        font-size: 13px;
+          cursor: pointer;
+          font-weight: 600;
+          background-color: white;
+          color: #3a4452;
+          transition: all ease .5s;
+}
+
+.header-calc button:hover{
+          background-color: #3a4452;
+          color: white;
+          box-shadow: 0 0 10px rgba(182, 182, 182, 0.651);
+
+
 }
 
 h1{
           margin: 5px;
-          font-family: monospace;
+          color: white;
+          text-align: center;
+         
           font-size: 30px;
 }
 .container{
@@ -16,7 +43,7 @@ h1{
           background-color: cornflowerblue;
           display: flex;
           align-items: center;
-          flex-direction: column;
+         
           justify-content: center;
 
 }
@@ -62,4 +89,78 @@ form input.equal{
 
 form input.operator{
           color: cyan;
+}
+
+.modal{
+          background-color: white;
+          width: 30%;
+          color: #3a4452;
+         height: 50vh;
+         position: absolute;
+         
+}
+
+.modal ul li{
+          text-decoration: none;
+}
+
+.head-modal{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+}
+
+.head-modal span{
+          cursor: pointer;
+          font-size: 20px;
+          padding: 5px 10px; 
+          border-radius: 100%;
+
+}
+
+.head-modal span:hover{
+          background-color: #3a4452;
+          color: white;
+
+}
+
+.modal-content{
+          overflow: auto;
+          height: 100%;
+}
+
+.modal-content ul{
+    
+          list-style: none; 
+}
+
+.modal-content ul li{
+          padding: 20px;
+          font-size: 15px;
+          
+}
+
+.modal-content ul li:hover{
+          background-color: rgb(209, 209, 209);
+
+
+}
+
+::-webkit-scrollbar {
+          display: none;
+      }
+
+.modal-content button{
+          border: none;
+          background-color: #3a4452;
+          color: white;
+          width: 100%;
+          padding: 15px;
+          font-size: 15px;cursor: pointer;
+          font-weight: 600;
+       
+ 
+
+
 }
